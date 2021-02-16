@@ -1,0 +1,25 @@
+{
+  "name": "weekendstudygroupproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "script": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiketheCity/weekendStudyGroupProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiketheCity/weekendStudyGroupProject/issues"
+  },
+  "homepage": "https://github.com/LiketheCity/weekendStudyGroupProject#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.14",
+    "request": "^2.88.2"
+  }
+}

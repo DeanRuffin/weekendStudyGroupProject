@@ -1,0 +1,77 @@
+Setup environment
+
+[main.js]
+
+- Get express
+- create app/server
+- Define a PORT: 8080
+- Get mongoose
+- Define connection string
+- Try to connect with mongoose and get my connection
+    * Make mongoose when errors arise
+    * Make mongoose tell me when it is connected
+
+- Define my mongoose models
+- Define API endpoints on my express app
+- Start listening for requests on my express app
+
+[express endpoint /students get]
+- Get student models
+- Find all documents in the models
+- If there is an error
+    * Status = 400
+    * Display error message
+- else
+    *Display documents found
+
+[express endpoint /students post]
+- Get the body from the request
+- Create a new instance of the model students
+- Save new instance
+    * If successful
+        # display message to client
+    * If error
+        # status = 400
+        # Display error message
+
+[express endpoint /students/:id get]
+- Get parameter id from request
+- Get student model
+- Find by id in the model
+    * If there is an error
+        #status = 400
+        #Display error message
+    * else
+        # Display document found
+
+[endpoint endpoint /students/:id put]
+- Get parameter id from request
+- Get student model
+- Find by id in the model
+    * If there is an error
+        #status = 400
+        #Display error message
+    * else
+        # Get the body from request
+        # Use the document we found and asign the new data
+            **Student.firstName = body.firstName
+            **Student.lastName = body.lastName
+            **Student.email = body.email
+        # Save changes in the document
+
+[express endpoint /students/:id delete]
+- Get parameter id from request
+- Get Student model
+- Find by id in the model
+    *If there is an error
+        #status = 400
+        #Display error message
+    *else
+        #Delete message
+            @if successful (then)
+                & display message
+            @if error(catch)
+                & status = 400
+                & display error message
+
+
